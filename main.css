@@ -22,7 +22,6 @@ body{
   letter-spacing: 2px;
 }
 
-
 /*topページ関連*/
 .top {
   background-color: #33FFFF;
@@ -66,6 +65,16 @@ body{
 /*workページ関連*/
 .work{
   background-color:#ffb6c1
+}
+
+.container-work{
+  display: flex;
+  margin:0 auto;
+  width:900px;
+}
+
+.sample-pictures{
+  width:550px;
 }
 
 .showcase__thumbnails {
@@ -237,6 +246,16 @@ ul{
   .title {
   font-size: 40px;
   margin-bottom:5px;
+  }
+  
+  /*workページ関連*/
+  .container-work{
+    width:90%;
+    flex-direction: column;
+  }
+  
+  .sample-pictures{
+    width:90%;
   }
   
   /*careerページ関連*/
