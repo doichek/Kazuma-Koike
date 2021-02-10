@@ -23,27 +23,31 @@ body{
 
 
 /*topページ関連*/
-.top {
-	background-color: #E0E0E0;
-	background-size: 16px 16px;
-	background-position: 0 0, 8px 8px, 0 0, 8px 8px, 0 0;
-	background-image:
-	 linear-gradient(45deg,  #BDBDBD 25%, #BDBDBD 25%,
-		 transparent 25%, transparent 100%),
-	 linear-gradient(-135deg, #BDBDBD 25%, #BDBDBD 25%,
-		 transparent 25%, transparent 100%),
-	 linear-gradient(-135deg, #E0E0E0 25%, #E0E0E0 25%,
-		 transparent 25%, transparent 100%),
-	 linear-gradient(45deg, #E0E0E0 25%, #E0E0E0 25%,
-		 transparent 25%, transparent 100%),
-	 linear-gradient(135deg, #BDBDBD 12.5%, #BDBDBD 12.5%,
-		 transparent 12.5%, transparent 25%,
-		 #BDBDBD 25%, #BDBDBD 37.5%,
-		 transparent 37.5%, transparent 62.5%,
-		 #BDBDBD 62.5%, #BDBDBD 75%,
-		 transparent 75%, transparent 87.5%,
-		 #BDBDBD 87.5%, #BDBDBD 100%);
+.top__video{
+ position: fixed;
+ right: 0;
+ bottom: 0;
+ min-width: 100%;
+ min-height: 100%;
+ width: auto;
+ height: auto;
+ z-index: -100;
+ background: url('poster.jpg') no-repeat;
+ background-size: cover;
 }
+
+.top-container{
+ position: relative; /*必ず必要*/
+ z-index: 2; /*必ず必要*/
+ width: 100%;
+ justify-content: center;
+ align-items: center;
+ text-align:center;
+ margin: auto;
+ color:white;
+ top: 40%;
+}
+
 
 .top-title {
   font-family: 'Source Serif Pro', cursive;
@@ -53,12 +57,6 @@ body{
 .top-catchphrase {
   font-size: 40px;
   font-family: 'Source Serif Pro', cursive;
-}
-
-.top-container {
-  position: relative;
-  top: 40%;
-  text-align: center;
 }
 
 .scroll-icon {
@@ -72,8 +70,8 @@ body{
   width: 24px;
   height: 24px;
   margin-left: -12px;
-  border-left: 2px solid #000;
-  border-bottom: 2px solid #000;
+  border-left: 2px solid #FFF;
+  border-bottom: 2px solid #FFF;
   -webkit-transform: rotate(-45deg);
   transform: rotate(-45deg);
   box-sizing: border-box;
