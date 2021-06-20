@@ -367,6 +367,7 @@ footer{
 @media (max-width:670px) {
   /*共通ページ関連*/
   .title {
+   padding-top:25px;
    font-size: 40px;
    margin-bottom:5px;
   }
@@ -401,7 +402,7 @@ footer{
   
   .hover-parent img{
     width: 100%; 
-    height: 200px;
+    height: 160px;
   }
   
   .hover-parent:nth-of-type(1) {
@@ -410,7 +411,7 @@ footer{
   
   .hover-mask-gray {
     width: 100%; 
-    height: 200px;
+    height: 160px;
     position: absolute;
     top: 10%;
     background: rgba(0,0,0,0.5);
@@ -442,11 +443,16 @@ footer{
   }
   
   .hover-mask-text p:nth-of-type(3) {
-    height: 10px;
+    height: 5px;
   }
   
   .hover-mask-text .btn {
     padding: 1px;
+    font-size:14px;
+  }
+  
+  .ototudoi .hover-mask-text .btn:nth-of-type(1) {
+    margin-right:0px!important;
   }
   
   /*careerページ関連*/
@@ -458,25 +464,25 @@ footer{
   }
   
   .container-profile img{
-    width:200px;
-    height:200px;
-    margin:0 auto;
+    width:150px;
+    height:150px;
+    margin:0 auto 10px auto;
   }
   
   .container-profile ul{
-    width:300px;
     margin:0 auto;
-    font-size:15px;
+    font-size:13px;
     padding-left:0px;
   }
   
   /*skillページ関連*/
   .container-skill{
     width:90%;
-    height:510px;
+    /*height:510px;*/
     flex-direction: column;
     justify-content: space-between;
     padding-top:0px;
+    padding-bottom:8px;
   }
   
   .container-skill img {
@@ -491,9 +497,12 @@ footer{
   
   .container-skill h3{
     font-size:20px;
-    margin-top:20px;
+    margin-top:10px;
+    padding-bottom:2px;
+    margin-bottom:0px;
   }
   
+  /*contactページ関連*/
   .container-contact{
     width:90%;
     flex-direction:column;
